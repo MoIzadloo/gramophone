@@ -46,10 +46,10 @@ class Ui_MainWindow(QtWidgets.QWidget):
         super().__init__()
         self.path = os.path.dirname(os.path.realpath(__file__))
         self.main_window = main_window
-        self.musics_path = self.path + "/musics"
+        self.musics_path = os.path.join(self.path,"musics")
         os.makedirs(self.musics_path, exist_ok=True)
-        self.music_paths = glob(self.musics_path + "/*.mp3")
-        self.music_names = list(map(lambda item: item.replace(self.musics_path + "\\","").replace(".mp3","").replace("/","") ,self.music_paths))
+        self.music_paths = glob(os.path.join(self.musics_path,"*.mp3"))
+        self.music_names = list(map(lambda item: item.replace(self.musics_path + "\\","").replace(".mp3","").replace(self.musics_path + "/","") ,self.music_paths))
         self.pict = list(map(lambda item: self.apic_extract(item),self.music_paths))
         self.legths =  list(map(lambda item: self.get_lenght(item),self.music_paths))
         self.labels = []
