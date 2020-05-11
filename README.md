@@ -30,8 +30,8 @@ or\
 `pip install mutagen`\
 `pip install Pillow==2.2.1`
 ### Screenshot:
-![](https://github.com/MoIzadloo/gramophone/blob/master/Screenshot/Screenshot%20(1).png)\
-![](https://github.com/MoIzadloo/gramophone/blob/master/Screenshot/Screenshot%20(2).png)
+![](https://github.com/MoIzadloo/gramophone/blob/master/Screenshot%20(1).png)\
+![](https://github.com/MoIzadloo/gramophone/blob/master/Screenshot%20(2).png)
 ### Download & Config & Usage:
 ### Linux
 >Download the tool from github\
