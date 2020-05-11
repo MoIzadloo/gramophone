@@ -4,9 +4,9 @@ gramophone Version 0.1
 ### Description :
 >gramophone is a simple cross platform music player written in python 3
 ### Dependencies :
->PyQt5
->mutagen
->pygame
+>PyQt5\
+>mutagen\
+>pygame\
 >Pillow
 ### Install Dependencies :
 ### Linux
