@@ -196,7 +196,7 @@ class Ui_MainWindow(QtWidgets.QWidget):
             self.update_background(previous_song)
             pygame.mixer.init()
             pygame.mixer.music.load(self.music_paths[previous_song])
-            pygame.mixer.music.play(0)
+            pygame.mixer.music.play(-1)
             self.music = previous_song
         except:
             try:
@@ -209,7 +209,7 @@ class Ui_MainWindow(QtWidgets.QWidget):
                 self.update_background(0)
                 pygame.mixer.init()
                 pygame.mixer.music.load(self.music_paths[0])
-                pygame.mixer.music.play(0)
+                pygame.mixer.music.play(-1)
                 self
                 self.music = 0
             except:
@@ -231,7 +231,7 @@ class Ui_MainWindow(QtWidgets.QWidget):
             self.update_background(next_song)
             pygame.mixer.init()
             pygame.mixer.music.load(self.music_paths[next_song])
-            pygame.mixer.music.play(0)
+            pygame.mixer.music.play(-1)
             self.music = next_song
         except:
             try:
@@ -244,7 +244,7 @@ class Ui_MainWindow(QtWidgets.QWidget):
                 self.update_background(0)
                 pygame.mixer.init()
                 pygame.mixer.music.load(self.music_paths[0])
-                pygame.mixer.music.play(0)
+                pygame.mixer.music.play(-1)
                 self.music = 0
             except :
                 self.empty_folder()
@@ -274,7 +274,7 @@ class Ui_MainWindow(QtWidgets.QWidget):
         self.update_background(idx)
         pygame.mixer.init()
         pygame.mixer.music.load(self.music_paths[idx])
-        pygame.mixer.music.play(0)
+        pygame.mixer.music.play(-1)
         self.music = idx
 
     def empty_folder(self):
@@ -306,7 +306,7 @@ class Ui_MainWindow(QtWidgets.QWidget):
                     self.update_background(0)
                     pygame.mixer.init()
                     pygame.mixer.music.load(self.music_paths[0])
-                    pygame.mixer.music.play(0)
+                    pygame.mixer.music.play(-1)
                     self.music = 0
                 except:
                     self.empty_folder()
@@ -335,3 +335,4 @@ if __name__ == "__main__":
     ui.setupUi()
     main_window.show()
     sys.exit(app.exec_())
+
