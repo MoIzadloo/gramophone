@@ -10,7 +10,7 @@ gramophone Version 0.1
 >Pillow
 ### Install Dependencies :
 ### Linux
-`sudo pip3 install -r requirements.txt`\
+`sudo pip install -r requirements.txt`\
 `sudo apt-get install python3-pyqt5`\
 `sudo apt-get install pyqt5-dev-tools`\
 `sudo apt-get install qttools5-dev-tools`\
