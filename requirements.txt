@@ -1,3 +1,4 @@
 mutagen
 pygame
+Pillow==2.2.1
 pyqt5
